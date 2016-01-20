@@ -1,0 +1,73 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>d3js</title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+    </head>
+    <body>
+        <h1>d3js</h1>
+
+        <hr/>
+
+        <h2>2. FUNDAMENTALS</h2>
+
+        <hr/>
+
+        <h3>HTML</h3>
+
+        <p>hypertext markup language is used to structure content for web browsers.</p>
+
+        <h3>DOM</h3>
+
+        <p>the document object model refers to the hierarchical structure of html. each bracketed tag is an element, and we refer to elements' relative relationship to each other in human terms. parent, child, sibling, ancestor, and descendant. in this html code, the body element is a parent element to all of its children elements. all elements on the page are descendants of html. we browsers parse the DOM in order to make sense of a page's content.</p>
+
+        <h3>CSS</h3>
+
+        <p>cascading style sheets are used to make visual presentation of HTML.</p>
+
+        <h3>JavaScript</h3>
+        
+        <p>javascript is a dynamic scripting language that can instruct the browser to make changes to a page after it has already loaded. scripts can be included directly in HTML, between two script tags.</p>
+        
+        <h3>Developer Tools</h3>
+
+        <p>while 'view source' shows you the original HTML source of the page, the web inspector shows the current state of the DOM. this is useful because your code will modify DOM elements dynamically. in the web inspector, you can watch elements as they change. you'll also use the JAVASCRIPT console for debugging. see more on debugging HTML, CSS, and JAVASCRIPT with the web inspector and console. <a href="https://developer.chrome.com/devtools">Here is a link.</a></p>
+        
+        <h3>SVG</h3>
+
+        <p>D3 is at its best when rendering visuals as SCALABLE VECTOR GRAPHICS (SVG). SVG is a text-based image format. this means that SVG images are specified by simply writing mark-up. SVG is awesome.</p>
+
+		<svg width="50" height="50">
+		    <circle cx="25" cy="25" r="22"
+		     fill="blue" stroke="gray" stroke-width="2"/>
+		</svg>
+		
+		<hr/>
+		
+		<h2>3. SET UP</h2>
+		
+		<hr/>
+
+		<p>set up a directory with the necessary code. <a href="http://d3js.org/d3.v3.js">find d3.v3.js here.</a></p>
+		
+		<hr/>
+		
+		<h2>4. ADDING ELEMENTS</h2>
+		
+		<hr/>
+		
+		<script type="text/javascript">
+			// beautiful code here!
+			d3.select("body").append("p").text("New paragraph! This one is made with d3");
+		</script>
+
+		<p>another paragraph!</p>
+
+		
+
+
+
+
+    </body>
+</html>
+
