@@ -7,6 +7,8 @@
     <body>
         <h1>d3js</h1>
 
+        <p>this tutorial can be found <a href="http://alignedleft.com/tutorials/d3" target="_blank">here :)</a></p>
+
         <hr/>
 
         <h2>2. FUNDAMENTALS</h2>
@@ -31,7 +33,7 @@
         
         <h3>Developer Tools</h3>
 
-        <p>while 'view source' shows you the original HTML source of the page, the web inspector shows the current state of the DOM. this is useful because your code will modify DOM elements dynamically. in the web inspector, you can watch elements as they change. you'll also use the JAVASCRIPT console for debugging. see more on debugging HTML, CSS, and JAVASCRIPT with the web inspector and console. <a href="https://developer.chrome.com/devtools">Here is a link.</a></p>
+        <p>while 'view source' shows you the original HTML source of the page, the web inspector shows the current state of the DOM. this is useful because your code will modify DOM elements dynamically. in the web inspector, you can watch elements as they change. you'll also use the JAVASCRIPT console for debugging. see more on debugging HTML, CSS, and JAVASCRIPT with the web inspector and console. <a href="https://developer.chrome.com/devtools" target="_blank">Here is a link.</a></p>
         
         <h3>SVG</h3>
 
@@ -48,7 +50,7 @@
 		
 		<hr/>
 
-		<p>set up a directory with the necessary code. <a href="http://d3js.org/d3.v3.js">find d3.v3.js here.</a></p>
+		<p>set up a directory with the necessary code. <a href="http://d3js.org/d3.v3.js" target="_blank">find d3.v3.js here.</a></p>
 		
 		<hr/>
 		
@@ -58,15 +60,26 @@
 		
 		<script type="text/javascript">
 			// beautiful code here!
-			d3.select("body").append("p").text("New paragraph! This one is made with d3");
+			d3.select("body")
+				.append("p")
+				.text("New paragraph! This one is made with d3");
 		</script>
 
 		<p>another paragraph!</p>
 
+		<hr/>
 		
+		<h2>5. CHAINING METHODS</h2>
+		
+		<hr/>
 
+		<p>d3 feels like jquery, feel me?. also, regarding functions and methods? same shit. </p>
 
+		<h3>one link at a time</h3>
 
+		<p>regarding the code above (use developer tools, asshole), d3 references the D3 object, so we can access its methods.</p>
+
+		<p>.select("body") is used as a CSS selector as an input, and it will return a reference to the first element in the DOM that matches. (use selectAll() when you need more tha one element.) in this case, we just want the body, so a reference to body is handed off to the next method in our chain.</p>
 
     </body>
 </html>
