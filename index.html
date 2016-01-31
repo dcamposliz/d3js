@@ -67,19 +67,91 @@
 
 		<p>another paragraph!</p>
 
+		<script type="text/javascript">
+			// some other beautiful code here
+
+			d3.select("body")
+				.append("p")
+				.text("yo, another paragraph with D3JS");
+		</script>
+
+		<script type="text/javascript">
+			// even more code now
+			d3.select("body")
+				.append("h4")
+				.text("here is a random header tag that got lost in the shuffle. lol just kidding, this is a D3JS-generated header tag");
+		</script>
+
+		<script type="text/javascript">
+			// so what?
+			d3.select("body")
+				.append("p")
+				.text("wonder what kind of other elements I can throw out there with this thing");
+		</script>
+
+		<script type="text/javascript">
+			var someText = "here is a variable string";
+			d3.select("body")
+				append("p")
+				.test(someText);
+		</script>
+
 		<hr/>
 		
 		<h2>5. CHAINING METHODS</h2>
 		
 		<hr/>
 
-		<p>d3 feels like jquery, feel me?. also, regarding functions and methods? same shit. </p>
+		<p>d3 feels like jquery, feel me?.a lso, regarding functions and methods? same shit. </p>
 
 		<h3>one link at a time</h3>
 
 		<p>regarding the code above (use developer tools, asshole), d3 references the D3 object, so we can access its methods.</p>
 
 		<p>.select("body") is used as a CSS selector as an input, and it will return a reference to the first element in the DOM that matches. (use selectAll() when you need more tha one element.) in this case, we just want the body, so a reference to body is handed off to the next method in our chain.</p>
+
+		<hr/>
+		<h2>---- SOME OTHER SHIT HERE ----</h2>
+		<hr/>
+		<script type="text/javascript">
+
+			//Width and height
+			var w = 700;
+			var h = 700;
+			
+			var dataset = [
+							[50, 500], 
+							[100, 450], 
+							[150, 400], 
+							[200, 350],
+							[250, 300], 
+							[300, 250], 
+							[350, 200], 
+							[400, 150], 
+							[450, 100],
+							[500, 50]
+						  ];
+		
+			//Create SVG element
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			svg.selectAll("circle")
+			   .data(dataset)
+			   .enter()
+			   .append("circle")
+			   .attr("cx", function(d) {
+			   		return d[0];
+			   })
+			   .attr("cy", function(d) {
+			   		return d[1];
+			   })
+			   .attr("r", 5);
+		</script>
+
+
 
     </body>
 </html>

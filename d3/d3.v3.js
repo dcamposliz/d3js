@@ -1998,6 +1998,12 @@
       request.send(data == null ? null : data);
       return xhr;
     };
+
+    // GETTING THIS ERROR
+    //XMLHttpRequest cannot load file:///home/dc/myProjects/d3js/stocks.csv. Cross origin requests 
+    //are only supported for protocol schemes: http, data, chrome, chrome-extension, https, 
+    //chrome-extension-resource.
+
     xhr.abort = function() {
       request.abort();
       return xhr;
