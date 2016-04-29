@@ -69,7 +69,6 @@
 
 		<script type="text/javascript">
 			// some other beautiful code here
-
 			d3.select("body")
 				.append("p")
 				.text("yo, another paragraph with D3JS");
@@ -90,10 +89,23 @@
 		</script>
 
 		<script type="text/javascript">
+			d3.select("body")
+				.append("h3")
+				.text("here is a random header tag to remind us how to build d3 objects and throw them into the view!")
+		</script>
+
+		<script type="text/javascript">
 			var someText = "here is a variable string";
 			d3.select("body")
-				append("p")
-				.test(someText);
+				.append("p")
+				.text(someText);
+		</script>
+
+		<script type="text/javascript">
+			var moreStuff = "here is ehm, more estooff";
+			d3.select("body")
+				.append("p")
+				.text(moreStuff);
 		</script>
 
 		<hr/>
@@ -106,12 +118,12 @@
 
 		<h3>one link at a time</h3>
 
-		<p>regarding the code above (use developer tools, asshole), d3 references the D3 object, so we can access its methods.</p>
+		<p>regarding the code above (use developer tools, mang), d3 references the D3 object, so we can access its methods.</p>
 
-		<p>.select("body") is used as a CSS selector as an input, and it will return a reference to the first element in the DOM that matches. (use selectAll() when you need more tha one element.) in this case, we just want the body, so a reference to body is handed off to the next method in our chain.</p>
+		<p>.select("body") is used as a CSS selector as an input, and it will return a reference to the first element in the DOM that matches. (use selectAll() when you need more than one element.) in this case, we just want the body, so a reference to body is handed off to the next method in our chain.</p>
 
 		<hr/>
-		<h2>---- SOME OTHER SHIT HERE ----</h2>
+		<h2>---- SOME OTHER stuff HERE ----</h2>
 		<hr/>
 		<script type="text/javascript">
 
@@ -151,6 +163,9 @@
 			   .attr("r", 5);
 		</script>
 
+		<hr/>
+		<h2></h2>
+		<hr/>
 
 
     </body>
