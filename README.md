@@ -11,3 +11,7 @@ Here are some tutorials that I am following for this:
 	D3 Tutorials by Scott Murray
 
 		http://alignedleft.com/tutorials/d3
+
+	SVG (MDN)
+
+		https://developer.mozilla.org/en-US/docs/Web/SVG
